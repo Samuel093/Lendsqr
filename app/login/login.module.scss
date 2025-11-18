@@ -1,0 +1,36 @@
+.login-wrapper {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+  }
+}
+
+.left-panel {
+  padding: 3rem;
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #ffffff;
+  }
+}
+
+.right-panel {
+  padding: 2rem;
+  background: #fbfbfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 4rem;
+  }
+}
+
+.form-container {
+  width: 100%;
+  max-width: 380px;
+}

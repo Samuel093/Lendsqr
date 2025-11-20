@@ -1,0 +1,32 @@
+[
+  {
+    "id": "{{objectId()}}",
+    "profile": {
+      "first_name": "{{firstName()}}",
+      "last_name": "{{lastName()}}",
+      "avatar": "https://i.pravatar.cc/150?u={{objectId()}}",
+      "organization": "{{company()}}",
+      "username": "{{firstName()}} {{lastName()}}"
+    },
+    "email": "{{email()}}",
+    "phone": "{{phone()}}",
+    "status": "{{random(\"Active\", \"Inactive\", \"Pending\", \"Blacklisted\")}}",
+    "created_at": "{{date(new Date(2020,0,1), new Date(), 'YYYY-MM-DDTHH:mm:ssZ')}}",
+
+    "education_employment": {
+      "education_level": "{{random(\"B.Sc\",\"HND\",\"ND\",\"M.Sc\")}}",
+      "sector": "{{random(\"FinTech\",\"Banking\",\"Technology\",\"Manufacturing\")}}",
+      "employment_status": "{{random(\"Employed\",\"Unemployed\",\"Self-Employed\")}}",
+      "duration": "{{integer(1,10)}} years",
+      "office_email": "{{email()}}",
+      "monthly_income": ["₦{{integer(200000,600000)}}", "₦{{integer(600000,1000000)}}"],
+      "loan_repayment": "₦{{integer(10000, 90000)}}"
+    },
+
+    "socials": {
+      "twitter": "twitter.com/{{username()}}",
+      "facebook": "facebook.com/{{username()}}",
+      "instagram": "instagram.com/{{username()}}"
+    }
+  }
+]

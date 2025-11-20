@@ -1,0 +1,35 @@
+/* MAIN DASHBOARD WRAPPER */
+.dashboard {
+  background: #fbfbfb;
+  min-height: 100vh;
+
+  /* Figma desktop spacing */
+  padding: 60px 32px 40px;
+
+  @media (max-width: 1024px) {
+    padding: 48px 24px 32px;
+  }
+
+  @media (max-width: 640px) {
+    padding: 32px 16px 24px;
+  }
+}
+
+/* STAT CARDS GRID — PIXEL PERFECT */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;  /* Figma spacing */
+  margin-bottom: 40px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+

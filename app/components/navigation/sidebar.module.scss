@@ -1,0 +1,142 @@
+/* SIDEBAR WRAPPER */
+.sidebar {
+  width: 280px;
+  height: calc(100vh - 90px); /* Reduce height because header is 90px */
+  background: #ffffff;
+  overflow-y: auto;
+  padding: 30px 20px;
+  position: fixed;
+  top: 90px;           /* BELOW HEADER */
+  left: -300px;
+  transition: left 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  z-index: 50;
+
+  /* Desktop - always visible + sticky under header */
+  @media (min-width: 1024px) {
+    left: 0;
+    position: fixed;
+  }
+}
+
+/* MOBILE OPEN */
+.open {
+  left: 0;
+}
+
+/* BACKDROP FOR MOBILE */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 40;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+/* MOBILE CLOSE BTN */
+.closeBtn {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+
+  svg {
+    color: #213f7d;
+  }
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+}
+
+/* LOGO */
+.logoArea {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.brandText {
+  font-size: 20px;
+  font-weight: 700;
+  color: #213f7d;
+}
+
+/* SWITCH ORG */
+.switchOrg {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #213f7d;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 28px;
+  cursor: pointer;
+
+  img:last-child {
+    margin-left: auto;
+  }
+}
+
+/* DASHBOARD TOP LINK */
+.dashboardLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 12px;
+  color: #545f7d;
+  font-size: 14px;
+  border-left: 3px solid transparent;
+  transition: 0.25s ease;
+
+  &:hover {
+    background: #f3fcff;
+  }
+}
+
+/* SECTION */
+.section {
+  margin-top: 30px;
+}
+
+.sectionTitle {
+  color: #545f7d;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* MENU ITEMS */
+.menuItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  color: #545f7d;
+  border-left: 3px solid transparent;
+  font-size: 14px;
+  transition: 0.25s ease;
+
+  &:hover {
+    background: #f3fcff;
+  }
+}
+
+/* ACTIVE MENU ITEM */
+.active {
+  background: #f3fcff;
+  border-left-color: #39cdcc;
+  color: #213f7d;
+  font-weight: 600;
+}
+
+
+

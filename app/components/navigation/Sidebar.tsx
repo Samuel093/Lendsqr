@@ -64,7 +64,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
       <aside className={`${styles.sidebar} ${open ? styles.open : ""}`}>
         {/* CLOSE BUTTON (mobile only) */}
         <button className={styles.closeBtn} onClick={onClose}>
-          <X size={28} />
+          <X size={30} />
         </button>
 
         <div className={styles.inner}>

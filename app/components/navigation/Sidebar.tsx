@@ -62,14 +62,12 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
 
       {/* SIDEBAR */}
       <aside className={`${styles.sidebar} ${open ? styles.open : ""}`}>
-        {/* CLOSE BUTTON (mobile only) */}
+        {/* CLOSE BUTTON (mobile only — now correctly placed) */}
         <button className={styles.closeBtn} onClick={onClose}>
-          <X size={30} />
+          <X size={28} />
         </button>
 
         <div className={styles.inner}>
-          {/* LOGO + BRAND NAME */}
-         
 
           {/* SWITCH ORGANIZATION */}
           <div className={styles.switchOrg}>
@@ -81,7 +79,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
             />
             <span>Switch Organization</span>
             <Image
-              src="/icons/dropdown.svg"
+              src="/images/dropdown.png"
               width={14}
               height={14}
               alt="dropdown"
@@ -137,6 +135,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
     </>
   );
 }
+
 
 
 

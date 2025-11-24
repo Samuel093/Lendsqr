@@ -2,8 +2,9 @@
 
 import React, { useMemo, useState } from "react";
 import { User } from "@/lib/types";
-import StatusBadge
+import StatusBadge from "@/app/components/StatusBadge";
 import styles from "@/app/dashboard/dashboard.module.scss";
+
 
 /**
  * Features:
@@ -242,4 +243,3 @@ export default function UserTable({ users }: Props) {
 
 
 
-                                 

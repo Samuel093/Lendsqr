@@ -16,7 +16,7 @@ export default function StatCard({ icon, label, value }: Props) {
     <div className={styles.statCard}>
       <div className="flex items-start justify-between">
         <div className="flex items-center gap-3">
-          {/* image wrapper prevents overflow by fixing size */}
+          {/* fixed-size wrapper prevents layout shift */}
           <div style={{ width: 40, height: 40, flex: "0 0 40px" }}>
             <Image src={icon} alt={`${label} icon`} width={40} height={40} />
           </div>
@@ -30,4 +30,5 @@ export default function StatCard({ icon, label, value }: Props) {
     </div>
   );
 }
+
 

@@ -158,6 +158,73 @@
   color: var(--text-muted);
 }
 
+/* (inside app/dashboard/dashboard.module.scss) */
+
+/* table card */
+.tableCard {
+  background: var(--bg-card, #fff);
+  border: 1px solid var(--border-soft, #E0E3EB);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  overflow: hidden;
+}
+
+/* card header area */
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-soft, #E0E3EB);
+}
+
+/* horizontal scroll wrapper */
+.tableResponsive {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* table style */
+.tableCard table {
+  width: 100%;
+  min-width: 820px; /* keeps desktop columns readable, will scroll on smaller widths */
+  border-collapse: collapse;
+  font-size: 14px;
+  color: var(--text-muted, #545F7D);
+}
+
+.tableCard thead {
+  background: #F9FAFC;
+  color: var(--text-muted, #545F7D);
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+}
+
+.tableCard th,
+.tableCard td {
+  padding: 14px 18px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.tableCard tbody tr {
+  border-top: 1px solid var(--border-soft, #E0E3EB);
+}
+
+.tableCard tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+.tableCard tbody tr:nth-child(even) {
+  background: #FCFCFF;
+}
+
+/* small screen: hide table, show mobile cards */
+@media (max-width: 640px) {
+  .tableCard table { display: none; } /* hide desktop table on mobile */
+  .tableResponsive { overflow: visible; }
+}
 
 
 

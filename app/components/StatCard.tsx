@@ -18,7 +18,14 @@ export default function StatCard({ icon, label, value }: Props) {
         <div className="flex items-center gap-3">
           {/* fixed-size wrapper prevents layout shift */}
           <div style={{ width: 40, height: 40, flex: "0 0 40px" }}>
-            <Image src={icon} alt={`${label} icon`} width={40} height={40} />
+            <Image
+              src={icon || "/icons/user_icon.svg"}
+              alt="stat icon"
+              width={32}
+              height={32}
+              unoptimized
+            />
+
           </div>
         </div>
       </div>

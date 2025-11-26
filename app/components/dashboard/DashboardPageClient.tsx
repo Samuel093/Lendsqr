@@ -19,6 +19,7 @@ export default function DashboardPageClient({ initialUsers }: Props) {
   return (
     <div className="flex w-full min-h-screen bg-[#FBFBFB]">
       <Sidebar open={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+
       <div className="flex-1 flex flex-col min-h-screen">
         <DashboardHeader onToggleSidebar={() => setIsSidebarOpen(true)} />
 
@@ -27,10 +28,10 @@ export default function DashboardPageClient({ initialUsers }: Props) {
             <h1 className={styles.pageTitle}>Users</h1>
 
             <section className={styles.stats}>
-              <StatCard icon="/images/user_icon.svg" label="USERS" value="2,453" />
-              <StatCard icon="/images/active_user_icon.svg" label="ACTIVE USERS" value="2,453" />
-              <StatCard icon="/images/user_with_loan_icon.svg" label="USERS WITH LOANS" value="12,453" />
-              <StatCard icon="/images/user_with_savings_icon.svg" label="USERS WITH SAVINGS" value="102,453" />
+              <StatCard icon="user" label="USERS" value="2,453" />
+              <StatCard icon="users" label="ACTIVE USERS" value="2,453" />
+              <StatCard icon="briefcase" label="USERS WITH LOANS" value="12,453" />
+              <StatCard icon="wallet" label="USERS WITH SAVINGS" value="102,453" />
             </section>
 
             <section className={styles.tableSection}>
@@ -42,4 +43,5 @@ export default function DashboardPageClient({ initialUsers }: Props) {
     </div>
   );
 }
+
 

@@ -1,26 +1,459 @@
 [
   {
-    "id": 1,
-    "name": "Grace Effiong",
-    "email": "grace@example.com",
-    "status": "active",
-    "socials": {
-      "twitter": "twitter.com/grace",
-      "facebook": "facebook.com/grace",
-      "instagram": "instagram.com/grace"
-    }
+    "id": "USR001",
+    "organization": "Lendsqr",
+    "username": "grace_olivia",
+    "email": "grace.olivia@example.com",
+    "phone": "+2348012345671",
+    "date_joined": "2022-01-15",
+    "status": "active"
   },
   {
-    "id": 2,
-    "name": "John Doe",
-    "email": "john@example.com",
-    "status": "inactive",
-    "socials": {
-      "twitter": "twitter.com/john",
-      "facebook": "facebook.com/john",
-      "instagram": "instagram.com/john"
-    }
+    "id": "USR002",
+    "organization": "Irorun",
+    "username": "john_miles",
+    "email": "john.miles@example.com",
+    "phone": "+2348012345672",
+    "date_joined": "2022-02-11",
+    "status": "inactive"
+  },
+  {
+    "id": "USR003",
+    "organization": "Moniepoint",
+    "username": "sandra_k",
+    "email": "sandra.k@example.com",
+    "phone": "+2348012345673",
+    "date_joined": "2022-03-03",
+    "status": "pending"
+  },
+  {
+    "id": "USR004",
+    "organization": "Lendsqr",
+    "username": "tobi_ade",
+    "email": "tobi.ade@example.com",
+    "phone": "+2348012345674",
+    "date_joined": "2022-03-21",
+    "status": "blacklisted"
+  },
+  {
+    "id": "USR005",
+    "organization": "Kuda",
+    "username": "halima_s",
+    "email": "halima.s@example.com",
+    "phone": "+2348012345675",
+    "date_joined": "2022-04-02",
+    "status": "active"
+  },
+  {
+    "id": "USR006",
+    "organization": "FairMoney",
+    "username": "david_w",
+    "email": "david.w@example.com",
+    "phone": "+2348012345676",
+    "date_joined": "2022-04-11",
+    "status": "inactive"
+  },
+  {
+    "id": "USR007",
+    "organization": "Lendsqr",
+    "username": "queen_t",
+    "email": "queen.t@example.com",
+    "phone": "+2348012345677",
+    "date_joined": "2022-05-25",
+    "status": "pending"
+  },
+  {
+    "id": "USR008",
+    "organization": "Piggyvest",
+    "username": "michael_s",
+    "email": "michael.s@example.com",
+    "phone": "+2348012345678",
+    "date_joined": "2022-06-08",
+    "status": "active"
+  },
+  {
+    "id": "USR009",
+    "organization": "Carbon",
+    "username": "judith_k",
+    "email": "judith.k@example.com",
+    "phone": "+2348012345679",
+    "date_joined": "2022-06-22",
+    "status": "blacklisted"
+  },
+  {
+    "id": "USR010",
+    "organization": "Lendsqr",
+    "username": "feranmi",
+    "email": "feranmi@example.com",
+    "phone": "+2348012345680",
+    "date_joined": "2022-07-03",
+    "status": "active"
+  },
+
+  {
+    "id": "USR011",
+    "organization": "Opay",
+    "username": "ayo_b",
+    "email": "ayo.b@example.com",
+    "phone": "+2348012345681",
+    "date_joined": "2022-07-19",
+    "status": "inactive"
+  },
+  {
+    "id": "USR012",
+    "organization": "Lendsqr",
+    "username": "mariam_x",
+    "email": "mariam.x@example.com",
+    "phone": "+2348012345682",
+    "date_joined": "2022-08-01",
+    "status": "pending"
+  },
+  {
+    "id": "USR013",
+    "organization": "Flutterwave",
+    "username": "samuel_olak",
+    "email": "samuel.olak@example.com",
+    "phone": "+2348012345683",
+    "date_joined": "2022-08-14",
+    "status": "blacklisted"
+  },
+  {
+    "id": "USR014",
+    "organization": "Lendsqr",
+    "username": "precious_t",
+    "email": "precious.t@example.com",
+    "phone": "+2348012345684",
+    "date_joined": "2022-08-28",
+    "status": "active"
+  },
+  {
+    "id": "USR015",
+    "organization": "Kuda",
+    "username": "victor_c",
+    "email": "victor.c@example.com",
+    "phone": "+2348012345685",
+    "date_joined": "2022-09-07",
+    "status": "inactive"
+  },
+  {
+    "id": "USR016",
+    "organization": "Moniepoint",
+    "username": "glory_o",
+    "email": "glory.o@example.com",
+    "phone": "+2348012345686",
+    "date_joined": "2022-09-22",
+    "status": "pending"
+  },
+  {
+    "id": "USR017",
+    "organization": "Lendsqr",
+    "username": "stephen_k",
+    "email": "stephen.k@example.com",
+    "phone": "+2348012345687",
+    "date_joined": "2022-10-11",
+    "status": "blacklisted"
+  },
+  {
+    "id": "USR018",
+    "organization": "Piggyvest",
+    "username": "diana_m",
+    "email": "diana.m@example.com",
+    "phone": "+2348012345688",
+    "date_joined": "2022-10-20",
+    "status": "active"
+  },
+  {
+    "id": "USR019",
+    "organization": "Lendsqr",
+    "username": "lamide_q",
+    "email": "lamide.q@example.com",
+    "phone": "+2348012345689",
+    "date_joined": "2022-11-02",
+    "status": "inactive"
+  },
+  {
+    "id": "USR020",
+    "organization": "FairMoney",
+    "username": "christian_j",
+    "email": "christian.j@example.com",
+    "phone": "+2348012345690",
+    "date_joined": "2022-11-19",
+    "status": "pending"
+  },
+
+  {
+    "id": "USR021",
+    "organization": "Lendsqr",
+    "username": "flora_b",
+    "email": "flora.b@example.com",
+    "phone": "+2348012345691",
+    "date_joined": "2022-12-01",
+    "status": "active"
+  },
+  {
+    "id": "USR022",
+    "organization": "Opay",
+    "username": "henry_l",
+    "email": "henry.l@example.com",
+    "phone": "+2348012345692",
+    "date_joined": "2022-12-14",
+    "status": "inactive"
+  },
+  {
+    "id": "USR023",
+    "organization": "Kuda",
+    "username": "beatrice",
+    "email": "beatrice@example.com",
+    "phone": "+2348012345693",
+    "date_joined": "2023-01-03",
+    "status": "blacklisted"
+  },
+  {
+    "id": "USR024",
+    "organization": "Moniepoint",
+    "username": "remi_t",
+    "email": "remi.t@example.com",
+    "phone": "+2348012345694",
+    "date_joined": "2023-01-17",
+    "status": "pending"
+  },
+  {
+    "id": "USR025",
+    "organization": "Lendsqr",
+    "username": "janet_s",
+    "email": "janet.s@example.com",
+    "phone": "+2348012345695",
+    "date_joined": "2023-02-01",
+    "status": "active"
+  },
+  {
+    "id": "USR026",
+    "organization": "Piggyvest",
+    "username": "donald_r",
+    "email": "donald.r@example.com",
+    "phone": "+2348012345696",
+    "date_joined": "2023-02-20",
+    "status": "inactive"
+  },
+  {
+    "id": "USR027",
+    "organization": "FairMoney",
+    "username": "kemi_x",
+    "email": "kemi.x@example.com",
+    "phone": "+2348012345697",
+    "date_joined": "2023-03-04",
+    "status": "pending"
+  },
+  {
+    "id": "USR028",
+    "organization": "Lendsqr",
+    "username": "abdul_m",
+    "email": "abdul.m@example.com",
+    "phone": "+2348012345698",
+    "date_joined": "2023-03-22",
+    "status": "blacklisted"
+  },
+  {
+    "id": "USR029",
+    "organization": "Kuda",
+    "username": "faith_j",
+    "email": "faith.j@example.com",
+    "phone": "+2348012345699",
+    "date_joined": "2023-04-01",
+    "status": "active"
+  },
+  {
+    "id": "USR030",
+    "organization": "Lendsqr",
+    "username": "miracle_p",
+    "email": "miracle.p@example.com",
+    "phone": "+2348012345700",
+    "date_joined": "2023-04-18",
+    "status": "inactive"
+  },
+
+  {
+    "id": "USR031",
+    "organization": "Carbon",
+    "username": "percy_t",
+    "email": "percy.t@example.com",
+    "phone": "+2348012345701",
+    "date_joined": "2023-05-02",
+    "status": "active"
+  },
+  {
+    "id": "USR032",
+    "organization": "Opay",
+    "username": "juliet_n",
+    "email": "juliet.n@example.com",
+    "phone": "+2348012345702",
+    "date_joined": "2023-05-19",
+    "status": "pending"
+  },
+  {
+    "id": "USR033",
+    "organization": "Lendsqr",
+    "username": "dare_x",
+    "email": "dare.x@example.com",
+    "phone": "+2348012345703",
+    "date_joined": "2023-06-01",
+    "status": "inactive"
+  },
+  {
+    "id": "USR034",
+    "organization": "Flutterwave",
+    "username": "kenny_p",
+    "email": "kenny.p@example.com",
+    "phone": "+2348012345704",
+    "date_joined": "2023-06-18",
+    "status": "blacklisted"
+  },
+  {
+    "id": "USR035",
+    "organization": "Lendsqr",
+    "username": "dare_o",
+    "email": "dare.o@example.com",
+    "phone": "+2348012345705",
+    "date_joined": "2023-07-05",
+    "status": "active"
+  },
+  {
+    "id": "USR036",
+    "organization": "Moniepoint",
+    "username": "peace_u",
+    "email": "peace.u@example.com",
+    "phone": "+2348012345706",
+    "date_joined": "2023-07-20",
+    "status": "pending"
+  },
+  {
+    "id": "USR037",
+    "organization": "Kuda",
+    "username": "emma_d",
+    "email": "emma.d@example.com",
+    "phone": "+2348012345707",
+    "date_joined": "2023-08-02",
+    "status": "inactive"
+  },
+  {
+    "id": "USR038",
+    "organization": "FairMoney",
+    "username": "patrick_k",
+    "email": "patrick.k@example.com",
+    "phone": "+2348012345708",
+    "date_joined": "2023-08-15",
+    "status": "blacklisted"
+  },
+  {
+    "id": "USR039",
+    "organization": "Lendsqr",
+    "username": "bella_q",
+    "email": "bella.q@example.com",
+    "phone": "+2348012345709",
+    "date_joined": "2023-08-29",
+    "status": "active"
+  },
+  {
+    "id": "USR040",
+    "organization": "Carbon",
+    "username": "robert_s",
+    "email": "robert.s@example.com",
+    "phone": "+2348012345710",
+    "date_joined": "2023-09-12",
+    "status": "inactive"
+  },
+
+  {
+    "id": "USR041",
+    "organization": "Opay",
+    "username": "hassan_w",
+    "email": "hassan.w@example.com",
+    "phone": "+2348012345711",
+    "date_joined": "2023-09-28",
+    "status": "pending"
+  },
+  {
+    "id": "USR042",
+    "organization": "Lendsqr",
+    "username": "esther_f",
+    "email": "esther.f@example.com",
+    "phone": "+2348012345712",
+    "date_joined": "2023-10-10",
+    "status": "active"
+  },
+  {
+    "id": "USR043",
+    "organization": "Piggyvest",
+    "username": "godwin_r",
+    "email": "godwin.r@example.com",
+    "phone": "+2348012345713",
+    "date_joined": "2023-10-30",
+    "status": "inactive"
+  },
+  {
+    "id": "USR044",
+    "organization": "Lendsqr",
+    "username": "amina_m",
+    "email": "amina.m@example.com",
+    "phone": "+2348012345714",
+    "date_joined": "2023-11-12",
+    "status": "blacklisted"
+  },
+  {
+    "id": "USR045",
+    "organization": "Flutterwave",
+    "username": "praise_j",
+    "email": "praise.j@example.com",
+    "phone": "+2348012345715",
+    "date_joined": "2023-11-29",
+    "status": "active"
+  },
+  {
+    "id": "USR046",
+    "organization": "FairMoney",
+    "username": "terry_d",
+    "email": "terry.d@example.com",
+    "phone": "+2348012345716",
+    "date_joined": "2023-12-10",
+    "status": "pending"
+  },
+  {
+    "id": "USR047",
+    "organization": "Lendsqr",
+    "username": "joshua_b",
+    "email": "joshua.b@example.com",
+    "phone": "+2348012345717",
+    "date_joined": "2024-01-04",
+    "status": "inactive"
+  },
+  {
+    "id": "USR048",
+    "organization": "Kuda",
+    "username": "veronica_n",
+    "email": "veronica.n@example.com",
+    "phone": "+2348012345718",
+    "date_joined": "2024-01-19",
+    "status": "active"
+  },
+  {
+    "id": "USR049",
+    "organization": "Carbon",
+    "username": "martins_q",
+    "email": "martins.q@example.com",
+    "phone": "+2348012345719",
+    "date_joined": "2024-02-02",
+    "status": "blacklisted"
+  },
+  {
+    "id": "USR050",
+    "organization": "Lendsqr",
+    "username": "teniola_o",
+    "email": "teniola.o@example.com",
+    "phone": "+2348012345720",
+    "date_joined": "2024-02-18",
+    "status": "active"
   }
 ]
+
 
 

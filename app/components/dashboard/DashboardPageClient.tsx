@@ -28,10 +28,10 @@ export default function DashboardPageClient({ initialUsers }: Props) {
             <h1 className={styles.pageTitle}>Users</h1>
 
             <section className={styles.stats}>
-              <StatCard icon="user" label="USERS" value="2,453" />
-              <StatCard icon="users" label="ACTIVE USERS" value="2,453" />
-              <StatCard icon="briefcase" label="USERS WITH LOANS" value="12,453" />
-              <StatCard icon="wallet" label="USERS WITH SAVINGS" value="102,453" />
+              <StatCard icon="/images/user_icon.svg" label="USERS" value="2,453" />
+              <StatCard icon="/images/active_user_icon.svg" label="ACTIVE USERS" value="2,453" />
+              <StatCard icon="/images/user_with_loan_icon.svg" label="USERS WITH LOANS" value="12,453" />
+              <StatCard icon="/images/user_with_savings_icon.svg" label="USERS WITH SAVINGS" value="102,453" />
             </section>
 
             <section className={styles.tableSection}>

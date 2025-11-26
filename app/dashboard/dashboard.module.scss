@@ -23,6 +23,7 @@
   background: var(--bg-main);
   min-height: 100vh;
   padding-top: calc(var(--header-height) + 20px);
+  padding-bottom: 80px; /* ⭐ restores Figma spacing */
 
   @media (min-width: 1024px) {
     margin-left: var(--sidebar-width);
@@ -64,6 +65,7 @@
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 24px;
   margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 /* card */
@@ -80,6 +82,11 @@
   width: 100%;
   min-width: 0;
   overflow: hidden;
+}
+
+
+.tableSection {
+  margin-bottom: 40px; /* ⭐ added */
 }
 
 /* table card */

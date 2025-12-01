@@ -23,23 +23,19 @@
   background: var(--bg-main);
   min-height: 100vh;
   padding-top: calc(var(--header-height) + 20px);
-  padding-bottom: 80px; /* ⭐ restores Figma spacing */
+  padding-bottom: 80px;
 
   @media (min-width: 1024px) {
     margin-left: var(--sidebar-width);
   }
 }
 
-/* centered container */
+/* container */
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 24px;
-
-  @media (max-width: 768px) {
-    padding: 0 16px;
-  }
 }
 
 /* page title */
@@ -48,66 +44,54 @@
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 32px;
+}
 
-  @media (min-width: 1024px) {
-    font-size: 28px;
-    margin-bottom: 40px;
+/* stat grid */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media (max-width: 640px) {
-    margin-bottom: 38px;
+    grid-template-columns: 1fr;
   }
 }
 
-/* STAT CARDS grid */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-  margin-bottom: 24px;
-  margin-bottom: 32px;
-}
-
-/* card */
+/* stat card */
 .statCard {
   background: var(--bg-card);
   border: 1px solid var(--border-soft);
   border-radius: var(--card-radius);
-  padding: 18px 20px;
+  padding: 18px;
   box-shadow: var(--card-shadow);
+  min-height: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 120px;
-  width: 100%;
-  min-width: 0;
-  overflow: hidden;
 }
 
-
+/* table section */
 .tableSection {
-  margin-bottom: 40px; /* ⭐ added */
+  margin-bottom: 40px;
 }
 
-/* table card */
+/* table card (single source of truth) */
 .tableCard {
   background: var(--bg-card);
   border: 1px solid var(--border-soft);
   border-radius: var(--card-radius);
   box-shadow: var(--card-shadow);
-  overflow: hidden;
+  overflow: visible; /* so anchored popover is visible */
+  padding: 20px;
+  position: relative;
 }
 
-/* optional header */
-.cardHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--border-soft);
-}
-
-/* responsive wrapper for the table (horizontal scroll when needed) */
+/* table responsive */
 .tableResponsive {
   width: 100%;
   overflow-x: auto;
@@ -142,96 +126,22 @@
   border-top: 1px solid var(--border-soft);
 }
 
-.tableCard tbody tr:nth-child(odd) {
-  background: #ffffff;
-}
-.tableCard tbody tr:nth-child(even) {
-  background: #FCFCFF;
-}
-
-/* small screen mobile accordion spacing */
-@media (max-width: 640px) {
-  .tableCard table { display: none; } /* hide desktop table */
-  .tableResponsive { overflow: visible; }
-}
-
-/* table footer / pagination */
+/* table footer */
 .tableFooter {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 16px;
+  padding-top: 12px;
   font-size: 14px;
   color: var(--text-muted);
 }
 
-/* (inside app/dashboard/dashboard.module.scss) */
-
-/* table card */
-.tableCard {
-  background: var(--bg-card, #fff);
-  border: 1px solid var(--border-soft, #E0E3EB);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  overflow: hidden;
-}
-
-/* card header area */
-.cardHeader {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 16px;
-  border-bottom: 1px solid var(--border-soft, #E0E3EB);
-}
-
-/* horizontal scroll wrapper */
-.tableResponsive {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
-/* table style */
-.tableCard table {
-  width: 100%;
-  min-width: 820px; /* keeps desktop columns readable, will scroll on smaller widths */
-  border-collapse: collapse;
-  font-size: 14px;
-  color: var(--text-muted, #545F7D);
-}
-
-.tableCard thead {
-  background: #F9FAFC;
-  color: var(--text-muted, #545F7D);
-  text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 0.6px;
-}
-
-.tableCard th,
-.tableCard td {
-  padding: 14px 18px;
-  text-align: left;
-  vertical-align: middle;
-}
-
-.tableCard tbody tr {
-  border-top: 1px solid var(--border-soft, #E0E3EB);
-}
-
-.tableCard tbody tr:nth-child(odd) {
-  background: #ffffff;
-}
-.tableCard tbody tr:nth-child(even) {
-  background: #FCFCFF;
-}
-
-/* small screen: hide table, show mobile cards */
+/* mobile */
 @media (max-width: 640px) {
-  .tableCard table { display: none; } /* hide desktop table on mobile */
+  .tableCard table { display: none; }
   .tableResponsive { overflow: visible; }
 }
+
 
 
 

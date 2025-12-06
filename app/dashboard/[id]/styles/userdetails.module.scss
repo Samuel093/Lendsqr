@@ -1,0 +1,122 @@
+.wrapper {
+  padding: 20px;
+  width: 100%;
+
+  @media (min-width: 1024px) {
+    padding: 40px 60px;
+  }
+}
+
+.backLink {
+  display: flex;
+  gap: 8px;
+  color: #545f7d;
+  margin-bottom: 20px;
+}
+
+.headerCard {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+
+  @media (min-width: 1024px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.userSection {
+  display: grid;
+  grid-template-columns: 80px repeat(3, auto);
+  gap: 20px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 60px auto;
+    grid-template-rows: repeat(3, auto);
+  }
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #f3f4f6;
+}
+
+.tier {
+  text-align: center;
+
+  @media (max-width: 768px) {
+    grid-column: span 2;
+  }
+}
+
+.headerButtons {
+  display: flex;
+  gap: 14px;
+
+  button {
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .blacklist {
+    border: 1px solid #e4033b;
+    color: #e4033b;
+    background: white;
+  }
+
+  .activate {
+    background: #39cdcc;
+    color: white;
+  }
+}
+
+.tabs {
+  display: flex;
+  gap: 30px;
+  margin: 30px 0;
+  overflow-x: auto;
+}
+
+.tab {
+  color: #545f7d;
+  padding-bottom: 10px;
+}
+
+.activeTab {
+  color: #39cdcc;
+  border-bottom: 2px solid #39cdcc;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+
+.detailsGrid {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.label {
+  font-size: 12px;
+  color: #545f7d;
+}
+
+.value {
+  font-size: 14px;
+  font-weight: 600;
+  color: #213f7d;
+}

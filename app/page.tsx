@@ -2,7 +2,8 @@
 
 import { useEffect, useState } from "react";
 import LoginPage from "./login/page";
-import DashboardPage from "./dashboard/page";
+import DashboardPage from "@/app/dashboard/page";
+
 
 export default function HomePage() {
   const [authenticated, setAuthenticated] = useState<boolean | null>(null);
